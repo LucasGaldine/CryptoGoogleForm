@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple, frontend-only class check-in form.">
+  <title>Class check-in</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Class check-in home"><span class="brand-icon" aria-hidden="true">▤</span> SimpleForm</a>
+    <span class="demo-label">Frontend demo</span>
+  </header>
+
+  <main>
+    <section id="sign-in" aria-labelledby="sign-in-title">
+      <div class="card intro-card">
+        <p class="eyebrow">CSC 354</p>
+        <h1 id="sign-in-title">Sign In</h1>
+        <p></p>
+      </div>
+      <form id="sign-in-form" class="card">
+        <label for="private-key">Private key <span class="required" aria-hidden="true">*</span></label>
+        <p class="field-help" id="key-help">Use a made-up key for this demo. Any nonempty value works.</p>
+        <input id="private-key" name="private-key" type="password" placeholder="Enter a demo private key" aria-describedby="key-help" autocomplete="off" required>
+        <button type="submit">Sign in <span aria-hidden="true">→</span></button>
+      </form>
+      <p class="footnote">Demo only. Your key is not verified, sent, or saved.</p>
+    </section>
+
+    <section id="questions" aria-labelledby="form-title" hidden>
+      <div class="card intro-card">
+        <p class="eyebrow">CLASS CHECK-IN</p>
+        <h1 id="form-title">Hello there.</h1>
+        <p>Two questions, and you’re all set.</p>
+        <p class="required-note"><span class="required">*</span> Required questions</p>
+      </div>
+      <form id="response-form">
+        <div class="card">
+          <label for="name">1. What is your name? <span class="required" aria-hidden="true">*</span></label>
+          <input id="name" name="name" type="text" placeholder="Your answer" autocomplete="name" maxlength="100" required>
+        </div>
+        <div class="card">
+          <label for="presentation-date">2. What day are you presenting? <span class="required" aria-hidden="true">*</span></label>
+          <input id="presentation-date" name="presentation-date" type="date" required>
+        </div>
+        <div class="actions">
+          <button type="submit">Submit <span aria-hidden="true">→</span></button>
+          <button type="button" id="sign-out" class="text-button">Sign out</button>
+        </div>
+      </form>
+      <p class="footnote">Frontend demo · Responses are not sent or saved.</p>
+    </section>
+
+    <section id="confirmation" aria-labelledby="confirmation-title" hidden>
+      <div class="card intro-card confirmation-card">
+        <span class="success-icon" aria-hidden="true">✓</span>
+        <p class="eyebrow">ALL DONE</p>
+        <h1 id="confirmation-title">Thanks for checking in.</h1>
+        <p>You’ve completed the demo form.<br>Your response has not been sent or saved.</p>
+        <button type="button" id="start-again">Back to sign in <span aria-hidden="true">→</span></button>
+      </div>
+    </section>
+  </main>
+  <footer>SimpleForm <span aria-hidden="true">·</span> Class check-in</footer>
+</body>
+</html>

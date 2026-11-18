@@ -1,0 +1,54 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #292333;
+  background: #f5f2fa;
+  font-synthesis: none;
+  --purple: #6941a5;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; }
+[hidden] { display: none !important; }
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 5%;
+  border-bottom: 1px solid #e8e2ef;
+}
+.brand { display: flex; align-items: center; gap: 10px; color: #352b45; text-decoration: none; font-size: 17px; font-weight: 700; }
+.brand-icon { display: grid; place-items: center; width: 30px; height: 34px; border-radius: 5px; background: var(--purple); color: white; font-size: 25px; }
+.demo-label { color: #776b84; font-size: 12px; }
+main { width: min(100% - 32px, 600px); margin: 64px auto 0; }
+.card { margin-bottom: 16px; padding: 30px; background: white; border: 1px solid #e2dce9; border-radius: 10px; }
+.intro-card { border-top: 7px solid var(--purple); padding-top: 28px; }
+.eyebrow { margin: 0 0 15px; color: var(--purple); font-size: 11px; font-weight: 700; letter-spacing: 1.6px; }
+h1 { margin: 0 0 14px; font-size: clamp(25px, 5vw, 32px); font-weight: 600; letter-spacing: -0.8px; line-height: 1.2; }
+p { color: #756c7e; font-size: 14px; line-height: 1.7; margin: 0; }
+label { display: block; font-size: 15px; line-height: 1.5; font-weight: 600; }
+.required { color: #b44755; }
+.field-help { margin-top: 8px; font-size: 12px; }
+input { display: block; width: 100%; min-width: 0; margin-top: 22px; padding: 13px 12px; border: 1px solid #d8d1e1; border-radius: 5px; background: #fff; font: inherit; font-size: 14px; color: #292333; }
+input::placeholder { color: #938a9c; }
+input:focus { border-color: var(--purple); outline: 3px solid #eee7f7; }
+button { display: inline-flex; align-items: center; justify-content: center; gap: 25px; min-height: 43px; padding: 11px 21px; border: 1px solid transparent; border-radius: 5px; background: var(--purple); color: white; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
+button:hover { background: #553287; }
+button:focus-visible, a:focus-visible { outline: 3px solid #a688d3; outline-offset: 4px; }
+#sign-in-form button { margin-top: 24px; }
+.footnote { text-align: center; font-size: 11px; padding: 4px 10px; }
+.required-note { margin-top: 22px; padding-top: 17px; border-top: 1px solid #eee9f3; font-size: 12px; }
+.actions { display: flex; align-items: center; justify-content: space-between; }
+.text-button { color: var(--purple); background: transparent; }
+.text-button:hover { background: #ebe4f4; }
+#questions .footnote { margin-top: 22px; }
+.confirmation-card { text-align: center; padding-top: 38px; padding-bottom: 40px; }
+.success-icon { display: grid; place-items: center; width: 56px; height: 56px; margin: 0 auto 26px; background: #eee7f7; color: var(--purple); border-radius: 50%; font-size: 28px; }
+.confirmation-card button { margin-top: 30px; }
+footer { text-align: center; margin: 45px 16px 28px; font-size: 11px; color: #948a9f; }
+footer span { padding: 0 8px; }
+@media (max-width: 480px) {
+  main { margin-top: 32px; }
+  .site-header { padding: 18px 20px; }
+  .card { padding: 25px 22px; }
+  .confirmation-card { padding-top: 32px; padding-bottom: 32px; }
+}
