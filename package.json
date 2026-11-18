@@ -1,0 +1,24 @@
+{
+  "name": "cryptogoogleform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasGaldine/CryptoGoogleForm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/LucasGaldine/CryptoGoogleForm/issues"
+  },
+  "homepage": "https://github.com/LucasGaldine/CryptoGoogleForm#readme",
+  "dependencies": {
+    "snarkjs": "^0.7.6"
+  }
+}

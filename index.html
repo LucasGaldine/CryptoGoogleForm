@@ -11,7 +11,6 @@
 <body>
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="Class check-in home"><span class="brand-icon" aria-hidden="true">▤</span> SimpleForm</a>
-    <span class="demo-label">Frontend demo</span>
   </header>
 
   <main>
@@ -19,25 +18,27 @@
       <div class="card intro-card">
         <p class="eyebrow">CSC 354</p>
         <h1 id="sign-in-title">Sign In</h1>
-        <p></p>
+        <p>Lucas Galdine, Samantha Galvan</p>
       </div>
       <form id="sign-in-form" class="card">
         <label for="private-key">Private key <span class="required" aria-hidden="true">*</span></label>
-        <p class="field-help" id="key-help">Use a made-up key for this demo. Any nonempty value works.</p>
+        <p class="field-help" id="key-help">Enter your private key. </p>
         <input id="private-key" name="private-key" type="password" placeholder="Enter a demo private key" aria-describedby="key-help" autocomplete="off" required>
         <button type="submit">Sign in <span aria-hidden="true">→</span></button>
       </form>
-      <p class="footnote">Demo only. Your key is not verified, sent, or saved.</p>
     </section>
 
     <section id="questions" aria-labelledby="form-title" hidden>
       <div class="card intro-card">
-        <p class="eyebrow">CLASS CHECK-IN</p>
-        <h1 id="form-title">Hello there.</h1>
-        <p>Two questions, and you’re all set.</p>
+        <p class="eyebrow">CSC 351</p>
+        <h1 id="form-title">Form 1</h1>
+        <p>Answer the form below.</p>
         <p class="required-note"><span class="required">*</span> Required questions</p>
       </div>
-      <form id="response-form">
+
+
+
+      <form id="response-form" onSubmit=>
         <div class="card">
           <label for="name">1. What is your name? <span class="required" aria-hidden="true">*</span></label>
           <input id="name" name="name" type="text" placeholder="Your answer" autocomplete="name" maxlength="100" required>
@@ -51,7 +52,9 @@
           <button type="button" id="sign-out" class="text-button">Sign out</button>
         </div>
       </form>
-      <p class="footnote">Frontend demo · Responses are not sent or saved.</p>
+
+
+
     </section>
 
     <section id="confirmation" aria-labelledby="confirmation-title" hidden>
@@ -59,7 +62,7 @@
         <span class="success-icon" aria-hidden="true">✓</span>
         <p class="eyebrow">ALL DONE</p>
         <h1 id="confirmation-title">Thanks for checking in.</h1>
-        <p>You’ve completed the demo form.<br>Your response has not been sent or saved.</p>
+        <p>You’ve completed the form.</p>
         <button type="button" id="start-again">Back to sign in <span aria-hidden="true">→</span></button>
       </div>
     </section>
